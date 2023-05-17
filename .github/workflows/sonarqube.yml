@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
           java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
+          distribution: 'zulu' # Alternativ distribution options are available.
     - name: Check variables  
       run: echo whoami " $env:SONAR_TOKEN"
     - name: SonarCloud Scan
