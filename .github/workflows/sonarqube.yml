@@ -19,7 +19,7 @@ jobs:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
     - name: Check variables  
-      run: echo "$SONAR_TOKEN"
+      run: echo whoami " $env:SONAR_TOKEN"
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       with:
